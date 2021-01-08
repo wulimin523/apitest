@@ -23,7 +23,7 @@ def init_logging():
     # 初始化日志器
     logger = logging.getLogger()
     # 添加注释
-    print('我是利民')
+    print('我是利民11')
 
     # 初始化处理器
     # 控制台
