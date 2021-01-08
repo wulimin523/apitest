@@ -47,7 +47,6 @@ class TestLogin(unittest.TestCase):
         cls.session.close()
     @parameterized.expand(get_data())
     def test01_post_login(self, data, status_code, resultCode, resultMsg):
-        # url = "https://shqp.dev/WEBICM/ajaxLogin"
         # 调用登录业务方法
         url = app.HOST + "service?optType=0&cdsName=login"
         response = self.apilogin.api_post_login(url, app.HEADERS, data)
