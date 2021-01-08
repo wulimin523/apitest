@@ -1,0 +1,14 @@
+{ "data_getall": {
+    "clockType": "",
+    "hoursTypeName": "",
+    "mtrDate": "2021-01-11",
+    "projectCode": "",
+    "projectName": "",
+    "projectPrincipal": "",
+    "selectType": "homePage",
+    "startDate": "2020-12-28"
+  },
+  "status_code":200,
+  "resultCode": 0,
+  "resultMsg":"接口调用成功"
+}
