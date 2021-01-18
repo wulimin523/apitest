@@ -14,7 +14,7 @@ import app
 class ApiDepartment():
     def __init__(self, session):
         self.session = session
-    # 获取所有
+    # 获取所有参与项目
     def api_get_all_dp(self, headers, data):
         return self.session.get(url=app.HOST+"service?optType=1&cdsName=clockHours", headers=headers, json=data)
     # 获取单个
