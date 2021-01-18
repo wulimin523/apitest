@@ -10,8 +10,8 @@
 -------------------------------------------------
 """
 def assert_common(self, response, http_code, success, code, message):
-    self.assertEqual( http_code, response.status_code)  # 断言响应状态码
+    assert http_code, response.status_code  # 断言响应状态码
     # self.assertEqual( success, response.json().get("success"))  # 断言success
-    self.assertEqual( code, response.json().get("resultCode"))  # 断言code
-    self.assertIn( message, response.json().get("resultMsg"))  # 断言message
+    assert code == response.json().get("resultCode")  # 断言code
+    assert message in response.json().get("resultMsg")  # 断言message
 

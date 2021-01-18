@@ -11,8 +11,8 @@
 """
 import unittest
 from tool.HwTestReport import HTMLTestReport
-from case.test01_login import TestLogin
-from case.test02_dp import TestDP
+from case.unittest.test01_login import TestLogin
+from case.unittest.test02_dp import TestDP
 
 suite = unittest.TestSuite()
 suite.addTest(unittest.TestLoader().loadTestsFromTestCase(TestLogin))

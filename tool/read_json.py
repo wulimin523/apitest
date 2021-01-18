@@ -10,10 +10,10 @@
 -------------------------------------------------
 """
 import json
-
+import app
 
 def read_json(filename):
-    with open( "../data/" + filename, "r", encoding="utf-8" ) as f:
+    with open(app.BASE_DIR + "/data/" + filename, "r", encoding="utf-8" ) as f:
         return json.load(f)
 
 
